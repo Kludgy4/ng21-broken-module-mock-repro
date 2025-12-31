@@ -42,7 +42,7 @@ describe('App', () => {
     const component = TestBed.createComponent(App).componentInstance;
     component.downloadClick();
 
-    // expect(downloadDocumentModule.downloadDocument).not.toHaveBeenCalled();
-    expect(downloadDocument).not.toHaveBeenCalled();
+    expect(downloadDocument).toHaveBeenCalled();
+    // expect(downloadDocumentModule.downloadDocument).toHaveBeenCalled();
   });
 });
